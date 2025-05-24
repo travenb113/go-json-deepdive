@@ -22,4 +22,9 @@ func main() {
 
 	json.Unmarshal([]byte(stringJson), &str)
 	fmt.Println(str)
+	/*
+		3
+		3.1412
+		bird
+	*/
 }
