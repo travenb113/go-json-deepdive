@@ -17,4 +17,5 @@ func main() {
 	var car Car
 	json.Unmarshal([]byte(carJson), &car)
 	fmt.Println(car)
+	//{car drive on the road slowly/fast 2025-05-24 12:45:23.234 +0000 UTC}
 }
