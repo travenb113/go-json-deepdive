@@ -6,12 +6,15 @@ import (
 	"time"
 )
 
+type Car struct {
+	Species     string
+	Description string
+	ReleaseTime time.Time
+}
+
 func main() {
-	dateJson := `"2025-05-23T12:25:45.567Z"`
-
-	var date time.Time
-
-	json.Unmarshal([]byte(dateJson), &date)
-
-	fmt.Println(date)
+	carJson := `{"species": "car", "description": "drive on the road slowly/fast", "releaseTime": "2025-05-24T12:45:23.234Z"}`
+	var car Car
+	json.Unmarshal([]byte(carJson), &car)
+	fmt.Println(car)
 }
