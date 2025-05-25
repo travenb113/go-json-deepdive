@@ -15,4 +15,5 @@ func main() {
 	var car Car
 	json.Unmarshal([]byte(carJson), &car)
 	fmt.Println(car)
+	//{passenger car drive on the road slowly/fast}
 }
