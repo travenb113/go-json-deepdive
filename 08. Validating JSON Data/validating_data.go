@@ -13,6 +13,13 @@ type Car struct {
 func main() {
 	carJson := `{"cars":{"passenger cars":"drive on the road slowly/fast","lexus": "brand of car"`
 	var result map[string]any
+
+	if !json.Valid([]byte(carJson)) {
+		// handle the error here
+		fmt.Println("invalid JSON string:", carJson)
+		return
+	}
+
 	json.Unmarshal([]byte(carJson), &result)
 
 	// The object stored in the "cars" key is also stored as
@@ -24,5 +31,6 @@ func main() {
 		// Each value is an `any` type, that is type asserted as a string
 		fmt.Println(key, value.(string))
 	}
-
+	//passenger cars drive on the road slowly/fast
+	//lexus brand of car
 }
