@@ -6,9 +6,7 @@ import (
 )
 
 type Car struct {
-	Species string `json:"carType"`
-	// we can set the "omitempty" property as part of the JSON tag
-	Description string `json:"what it does,omitempty"`
+	Species string `json:"-"`
 }
 
 func main() {
@@ -19,5 +17,5 @@ func main() {
 	data, _ := json.Marshal(passengerCar)
 
 	fmt.Println(string(data))
-
+	// {}
 }
