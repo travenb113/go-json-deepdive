@@ -28,3 +28,15 @@ It contains focused mini-projects and hands-on examples to help understand how t
 ├── 13. Marshaling Maps/    # Convert Go maps into JSON objects
 ├── 14. Custom Encoding Logic/  # Customize JSON output using MarshalJSON
 └── 15. Printing Formatted (Pretty-Printed) JSON/   # Pretty-print JSON with indentation for readability
+```
+
+## 📚 Resources & References
+This project is based on my learning journey through JSON handling in Go.
+Much of the material and practice examples are inspired by:
+
+[Go.dev Blog on JSON](https://go.dev/blog/json) — official Go blog post explaining JSON encoding/decoding in Go.
+
+[Soham Kamani’s Guide](https://www.sohamkamani.com/golang/json/) — beginner-friendly and very detailed explanation of JSON in Golang with examples.
+
+## 📝 License
+This project is open-source and free to use for educational purposes.
